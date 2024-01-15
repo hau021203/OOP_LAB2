@@ -32,7 +32,7 @@ public class Complex {
         return result;
     }
     public Complex Div(Complex c){
-        Complex result = new Complex(((this.a*c.a)+(this.b*c.b))/((c.a*c.a)+(c.b*c.b)),((this.b*c.a)+(this.a*c.b))/((c.a*c.a)+(c.b*c.b)));
+        Complex result = new Complex(((this.a*c.a)+(this.b*c.b))/((c.a*c.a)+(c.b*c.b)),((this.b*c.a)-(this.a*c.b))/((c.a*c.a)+(c.b*c.b)));
         return result;
     }
 }
