@@ -1,9 +1,9 @@
 package com.mycompany.question2;
 import java.util.*;
 public class BankAccount {
-    int mAccNum;
-    String mName;
-    double mBalance;
+    private int mAccNum;
+    private String mName;
+    private double mBalance;
     private double money;   
        
     public int getAccNum(){
@@ -15,8 +15,8 @@ public class BankAccount {
     public double getBalance(){
         return mBalance;
     }
-    BankAccount(){} 
-    BankAccount(int mAccNum,String mName,double mBalance){
+    public BankAccount(){} 
+    public BankAccount(int mAccNum,String mName,double mBalance){
         this.mAccNum = mAccNum;
         this.mName = mName;
         this.mBalance = mBalance;
@@ -52,7 +52,8 @@ public class BankAccount {
         mBalance = sc.nextDouble();
     }
     public void output(){
-        System.out.print(" account number :"+mAccNum+"| customer's full name :"+mName+"| account balance :"+mBalance);
+        System.out.println(" account number :"+mAccNum+"| customer's full name :"+mName+"| account balance :"+mBalance);
     }
+
     
 }
