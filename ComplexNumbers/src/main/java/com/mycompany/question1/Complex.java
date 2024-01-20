@@ -1,8 +1,8 @@
 package com.mycompany.question1;
 import java.util.*;
 public class Complex {
-    double a;
-    double b;
+    private double a;
+    private double b;
     Complex(){}
     Complex(double a, double b){
         this.a = a;
